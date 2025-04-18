@@ -6,6 +6,8 @@ const people = Array.from({ length: 10000 }, (_, i) => ({
   name: `Person ${i + 1}`,
 }));
 
+// normal list
+
 // const Vlist = () => {
 //   return (
 //     <div
@@ -30,6 +32,8 @@ const people = Array.from({ length: 10000 }, (_, i) => ({
 //     </div>
 //   );
 // };
+
+// virtualized list
 
 const Row = ({ index, style }) => {
   const person = people[index];
